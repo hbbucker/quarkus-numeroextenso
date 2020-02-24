@@ -3,7 +3,7 @@
 Consiste em traduzir um número inteiro entre -99999 e 99999 
 para 0 português, escrito por extenso.
 
-Este projeto usar Quarkus, o Supersonic Subatomic Framework Java
+Este projeto usa o Framework Quarkus, o Supersonic Subatomic Framework Java
 
 Para conhecer mais sobre o Quarkus, visite o website: https://quarkus.io/ .
 
@@ -19,7 +19,7 @@ Para conhecer mais sobre o Quarkus, visite o website: https://quarkus.io/ .
 ./mvnw package
 ```
 
-O camando cria o executável `traduzir-numero-1.0-SNAPSHOT-runner.jar` 
+O comando cria o executável `traduzir-numero-1.0-SNAPSHOT-runner.jar` 
 localizado no diretório `/target`.
 
 Este não é um _über-jar_ as dependencias são copiadas para o diretório `target/lib`.
