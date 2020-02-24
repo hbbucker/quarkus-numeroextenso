@@ -36,10 +36,10 @@ O Quarkus permite compilar de forma nativa a aplicação usando o GraalVM.
 A compilação nativa tem a vantagem de subir o serviço de forma muito mais rápida que JVM padrão do Java,
 para isto você precisa baixar inicialmente o VM do Graal:
 
-###Linux
+### Linux
 Download: https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-20.0.0/graalvm-ce-java8-linux-amd64-20.0.0.tar.gz
 
-###Windows
+### Windows
 Download: https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-20.0.0/graalvm-ce-java8-windows-amd64-20.0.0.zip
 
 
@@ -57,6 +57,11 @@ export JAVA_HOME=${GRAALVM_HOME}
 export GRAALVM_HOME=graalvm/graalvm-latest
 export JAVA_HOME=${GRAALVM_HOME}
 ./mvnw package -Pnative -Dquarkus.native.container-build=true
+```
+## Subindo o Container Docker
+
+```
+docker run --rm -dti -p3000:3000 quarkus/traduzir-numero-jvm
 ```
 
 ## Executando o binário nativo
